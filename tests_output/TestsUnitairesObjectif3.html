@@ -1,0 +1,118 @@
+<html>
+ <head>
+  <title>TestsUnitairesObjectif3.html</title>
+  <link rel="stylesheet" type="text/css" href="style/test.css" media="screen"/>
+ </head>
+ <body>
+  <h3>3.3.1. Test unitaires</h3>
+  <h4>3.3.1.1. Manipulation dijkstra</h4>
+  <h5>3.3.1.1.1. Obtenir chemin</h5>
+  <h6>3.3.1.1.1.1. Cas normal</h6>
+  <h7>3.3.1.1.1.1.1. Obtention du chemin le plus court dans un graph</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Creation d'un graph de 10 noeuds, composes d'arcs. On cherche le chemin le plus court entre le noeud 1 et le noeud 10.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>Le reponse doit etre la suivante : 1, 4, 5, 7, 2, 10 avec un cout de 12.</td>
+    <td>
+     <fieldset>
+      <legend>Dijkstra</legend>
+      <div>total cost : 12</div>
+      <div>path : 1 4 5 7 2 10 </div>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Nous avons bien recupere le chemin le plus court.</td>
+   </tr>
+  </table>
+  <h7>3.3.1.1.1.1.2. Obtention du chemin le plus court dans un graph, mais celui ci n'existe pas</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Creation d'un graph de 10 noeuds sans arcs. On cherche le chemin le plus court entre le noeud 1 et le noeud 10.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>Le server doit nous indiquer qu'il n'existe pas.</td>
+    <td>
+--------------------------------<br/>## Error : Can't find a path ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Dijkstra Exception ###<br/>Can't find a path between nodes '1' and '10'<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Nous avons bien recupere le message.</td>
+   </tr>
+  </table>
+  <h6>3.3.1.1.1.2. Cas limite</h6>
+  <h7>3.3.1.1.1.2.1. Obtention du chemin le plus court dans un graph</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Creation d'un graph de 10 noeuds. On cherche le chemin le plus court entre le noeud 1 et le noeud 1.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>Le reponse doit etre la suivante : 1 avec un cout de 0.</td>
+    <td>
+     <fieldset>
+      <legend>Dijkstra</legend>
+      <div>total cost : 0</div>
+      <div>path : 1 </div>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Nous avons bien recupere le chemin le plus court.</td>
+   </tr>
+  </table>
+  <h6>3.3.1.1.1.3. Cas d'erreur</h6>
+  <h7>3.3.1.1.1.3.1. Obtention du chemin le plus court dans un graph avec un noeud de depart inexistant</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Creation d'un graph de 10 noeuds, composes d'arcs. On cherche le chemin le plus court entre le noeud 11 et le noeud 1.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On doit recuperer une erreur car le noeud d'id 11 n'existe pas.</td>
+    <td>
+--------------------------------<br/>## Error : Can't search a path ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Dijkstra Exception ###<br/>The node with id '11' does not exist<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Nous avons bien recupere l'erreur.</td>
+   </tr>
+  </table>
+  <h7>3.3.1.1.1.3.2. Obtention du chemin le plus court dans un graph avec un noeud de fin inexistant</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Creation d'un graph de 10 noeuds, composes d'arcs. On cherche le chemin le plus court entre le noeud 1 et le noeud 11.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On doit recuperer une erreur car le noeud d'id 11 n'existe pas.</td>
+    <td>
+--------------------------------<br/>## Error : Can't search a path ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Dijkstra Exception ###<br/>The node with id '11' does not exist<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Nous avons bien recupere le chemin le plus court.</td>
+   </tr>
+  </table>
+ </body>
+</html>
+

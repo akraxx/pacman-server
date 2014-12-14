@@ -1,0 +1,2438 @@
+<html>
+ <head>
+  <title>TestsUnitairesObjectif2.html</title>
+  <link rel="stylesheet" type="text/css" href="style/test.css" media="screen"/>
+ </head>
+ <body>
+  <h3>3.2.4. Tests unitaires</h3>
+  <h4>3.2.4.1. Manipulation du graph</h4>
+  <h5>3.2.4.1.1. Creation d'un graph</h5>
+  <h6>3.2.4.1.1.1. Cas normal</h6>
+  <h7>3.2.4.1.1.1.1. Creation d'un graph oriented &amp; weighted</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Creation d’un graph avec des parametres pour son orientation et son poids. Il devra etre oriente et pondere.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>Creation d'un graphe oriente et pondere.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le graphe a ete cree corectement avec les bon parametres.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.1.1.1.2. Creation d'un graph non oriented &amp; weighted</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Creation d’un graph avec des parametres pour son orientation et son poids. Il devra etre non oriente et pondere.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>Creation d'un graphe non oriente et pondere.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = false, weighted = true</legend>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le graphe a ete cree corectement avec les bon parametres.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.1.1.1.3. Creation d'un graph oriented &amp; non weighted</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Creation d’un graph avec des parametres pour son orientation et son poids. Il devra etre oriente et non pondere.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>Creation d'un graphe oriente et non pondere.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = false</legend>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le graphe a ete cree corectement avec les bon parametres.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.1.1.1.4. Creation d'un graph non oriented &amp; non weighted</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Creation d’un graph avec des parametres pour son orientation et son poids. Il devra etre non oriente et non pondere.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>Creation d'un graphe non oriente et non pondere.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = false, weighted = false</legend>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le graphe a ete cree corectement avec les bon parametres.</td>
+   </tr>
+  </table>
+  <h5>3.2.4.1.2. Obtention de l'ordre</h5>
+  <h6>3.2.4.1.2.1. Cas normal</h6>
+  <h7>3.2.4.1.2.1.1. Obtention de l'ordre</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperation de l'ordre du graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe auquel on a ajoute 3 noeud. L'ordre doit donc etre de 3 apres ces ajouts.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = false, weighted = false</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Graph order : 3</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Nous obtenons l'ordre souhaite.</td>
+   </tr>
+  </table>
+  <h4>3.2.4.2. Manipulation des noeuds</h4>
+  <h5>3.2.4.2.1. Est-ce qu'un noeud existe</h5>
+  <h6>3.2.4.2.1.1. Cas normal</h6>
+  <h7>3.2.4.2.1.1.1. Le noeud existe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier qu'un noeud du graphe peut etre trouve.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute un noeud d'id 1. On souhaite donc une repose positive de la fonction.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Le noeud existe</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La fonction a bien trouve le noeud d'id 1 et nous renvoye une reponse positive.</td>
+   </tr>
+  </table>
+  <h5>3.2.4.2.2. Ajout d'un noeud</h5>
+  <h6>3.2.4.2.2.1. Cas normal</h6>
+  <h7>3.2.4.2.2.1.1. Ajout d'un noeud dans le graph</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier l'ajout d'un noeud dans un graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute deux noeud d'id 1 et 3. On y ajoute le noeud d'id 2 qui doit s'inserer dans le graphe entre les noeuds 1 et 3 car notre graphe est trie.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le noeud a ete ajoute au bon endroit.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.2.2.2. Cas limite</h6>
+  <h7>3.2.4.2.2.2.1. AJout d'un noeud en premiere position du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier l'ajout d'un noeud dans un graphe vide.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute un noeud d'id 1. On souhaite que celui-i y soit ajoute.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-7">ID = 7 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-7">ID = 7 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le noeud a ete ajoute au bon endroit.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.2.2.2.2. AJout d'un noeud en derniere position du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier l'ajout d'un noeud en derniere position d'un graphe vide.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute deux noeud d'id 1 et 3. On y ajout un noeud d'id 4. On souhaite que celui-ci soit bien place en derniere position du graphe.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-4">ID = 4 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le noeud a ete ajoute au bon endroit.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.2.2.3. Cas d'erreur</h6>
+  <h7>3.2.4.2.2.3.1. Ajout d'un noeud avec un id negatif</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'ajout d'un noeud d'id negatif n'est pas possible.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute un noeud d'id -1. L'ajout de ce noeud, dans le graphe, ne doit pas etre accepte.</td>
+    <td>
+--------------------------------<br/>## Error : Can't add a node ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Node exception :<br/>	Your entry : node = -1<br/>Node id must be a positive integer<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le noeud n'a pas ete ajoute.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.2.2.3.2. Ajout d'un noeud deja exsitent</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'ajout d'un noeud dont l'id existe deja dans le graphe n'est pas possible.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on ajoute un noeud d'id 1. On ajoute un nouveau noeud d'id 1. L'ajout de ce noeud, dans le graphe, ne doit pas etre accepte car il existe deja .</td>
+    <td>
+--------------------------------<br/>## Error : Can't add a node ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Node exception :<br/>	Your entry : node = 1<br/>A node with this id already exists<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le noeud n'a pas ete ajoute.</td>
+   </tr>
+  </table>
+  <h5>3.2.4.2.3. Changer la valeur d'un noeud</h5>
+  <h6>3.2.4.2.3.1. Cas normal</h6>
+  <h7>3.2.4.2.3.1.1.  Attribue la valeur d'un noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'attribuation d'une valeur a un noeud dans le graphe est possible.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute trois noeuds d'id 1, 2 et 3, on attribue la valeur 2 au noeud 2.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 2 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur a bien ete attribuee au noeud.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.2.3.2. Cas limite</h6>
+  <h7>3.2.4.2.3.2.1. Attribue la valeur du premier noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'attribuation d'une valeur au premier noeud du graphe est possible.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute trois noeud d'id 1, 2 et 3, on attribue la valeur 2 au noeud 1.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 2 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur a bien ete attribuee au noeud.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.2.3.2.2. Attribue la valeur du dernier noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'attribuation d'une valeur au dernier noeud du graphe est possible.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute trois noeud d'id 1, 2 et 3, on attribue la valeur 2 au noeud 3.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 2 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : </td>
+   </tr>
+  </table>
+  <h6>3.2.4.2.3.3. Cas d'erreur</h6>
+  <h7>3.2.4.2.3.3.1. Attribue la valeur d'un noeud hors du graphe (comprend aussi le cas du noeud d'id negatif)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'attribuation d'une valeur a un noeud non existant dans le graphe est imppossible.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe vide et on veut attribuer la valeur 2 a un noeud d'id 2 qui n'existe pas.</td>
+    <td>
+--------------------------------<br/>## Error : Can't find this column ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Matrix Exception ###<br/>Out of range exception :<br/>	Your entry : 1<br/>	Available interval : [ 1, 0 ]<br/>This column does not exist<br/>##############################################<br/>### THIS EXCEPTION ENGENDERED AN OTHER ONE ###<br/>######## ENGENDERED EXCEPTION BELOW ##########<br/>##############################################<br/>--------------------------------<br/>## Error : Can't set a node value ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Node exception :<br/>	Your entry : node = 2<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur n'a pas ete attribuee, une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h5>3.2.4.2.4. Obtenir la valeur d'un noeud</h5>
+  <h6>3.2.4.2.4.1. Cas normal</h6>
+  <h7>3.2.4.2.4.1.1. Cherche la valeur d'un noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperation de la valeur d'un noeud du graphe</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on ajoute 3 noeuds d'id 1, 2 et 3. On attribue comme valeur de chacun des noeuds, leur id. On veut recuperer la valeur du noeud d'id 2.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 1 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 2 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 3 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Value node 2 : 2</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur du noeud a bien ete recuperee.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.2.4.2. Cas limite</h6>
+  <h7>3.2.4.2.4.2.1. Cherche la valeur du premier noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperation de la valeur du premier noeud du graphe</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on ajoute 3 noeuds d'id 1, 2 et 3. On attribue comme valeur de chacun des noeuds, leur id. On veut recuperer la valeur du noeud d'id 1.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 1 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 2 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 3 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Value node 1 : 1</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur du noeud a bien ete recuperee.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.2.4.2.2. Cherche la valeur du dernier noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperation de la valeur du dernier noeud du graphe</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on ajoute 3 noeuds d'id 1, 2 et 3. On attribue comme valeur de chacun des noeuds, leur id. On veut recuperer la valeur du noeud d'id 3.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 1 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 2 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 3 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Value node 3 : 3</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur du noeud a bien ete recuperee.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.2.4.3. Cas d'erreur</h6>
+  <h7>3.2.4.2.4.3.1. Cherche la valeur d'un noeud hors du graphe (comprend aussi le cas du noeud d'id negatif)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperation de la valeur d'un noeud inexistant. Ce test verifie aussi le cas du noeud d'id negatif.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe vide. On veut recuperer la valeur du noeud d'id 1.</td>
+    <td>
+--------------------------------<br/>## Error : Can't find this column ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Matrix Exception ###<br/>Out of range exception :<br/>	Your entry : 1<br/>	Available interval : [ 1, 0 ]<br/>This column does not exist<br/>##############################################<br/>### THIS EXCEPTION ENGENDERED AN OTHER ONE ###<br/>######## ENGENDERED EXCEPTION BELOW ##########<br/>##############################################<br/>--------------------------------<br/>## Error : Can't get a node value ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Node exception :<br/>	Your entry : node = 1<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur du noeud n'a pas ete recuperee, une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h5>3.2.4.2.5. Suppression d'un noeud</h5>
+  <h6>3.2.4.2.5.1. Cas normal</h6>
+  <h7>3.2.4.2.5.1.1. Supprime un noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier la suppression d'un noeud dans le graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute 3 noeuds d'id 1, 2 et 3. On supprime le noeud d'id 2.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le noeud a bien ete supprime.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.2.5.2. Cas limite</h6>
+  <h7>3.2.4.2.5.2.1. Supprime le premier noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier la suppression d'un noeud en premiere position d'un graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute 3 noeuds d'id 1, 2 et 3. On supprime le noeud d'id 1.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : </td>
+   </tr>
+  </table>
+  <h7>3.2.4.2.5.2.2. Supprime le dernier noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier la suppression d'un noeud en derniere position d'un graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute 3 noeuds d'id 1, 2 et 3. On supprime le noeud d'id 3.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le noeud a bien ete supprime.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.2.5.3. Cas d'erreur</h6>
+  <h7>3.2.4.2.5.3.1. Supprime un noeud hors du graphe (comprend aussi le cas du noeud d'id negatif)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que la suppression d'un noeud non existant (comprend aussi le cas du noeud dont l'id est negatif)dans un graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute 3 noeuds d'id 1, 2 et 3. On supprime le noeud d'id 4 (respectivement -1). Cette suppression ne doit pas etre acceptee et une erreur doit nous en informe.</td>
+    <td>
+--------------------------------<br/>## Error : Can't find this node ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Node exception :<br/>	Your entry : node = 4<br/>Can't find a node with this id<br/>##############################################<br/>### THIS EXCEPTION ENGENDERED AN OTHER ONE ###<br/>######## ENGENDERED EXCEPTION BELOW ##########<br/>##############################################<br/>--------------------------------<br/>## Error : Can't remove a node ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Node exception :<br/>	Your entry : node = 4<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La suppression n'est pas effectuee et une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h4>3.2.4.3. Manipulation des arretes</h4>
+  <h5>3.2.4.3.1. Est-ce qu'une arrete existe</h5>
+  <h6>3.2.4.3.1.1. Cas normal</h6>
+  <h7>3.2.4.3.1.1.1. L'arrete existe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier qu'un arc du graphe peut etre trouve.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute un noeud d'id 1, 2 et 3 auquel on ajoute un arc. On souhaite donc une repose positive de la fonction.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-2">[ ID-DEST = 2 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Edge (2,2) existe</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La fonction a bien trouve l'arc et nous renvoye une reponse positive.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.1.1.2. L'arrete n'existe pas</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier qu'un arc non present dans le graphe ne peut etre trouve. Ce test verifie plusieurs autres cas : un des noeuds ou les deux noeuds hors du graphe et l'arc est entre un ou 2 noeuds d'id negatif.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute deux noeud d'id 1 et 2, aucun arc. On souhaite donc une reponse negative de la fonction qu'en a l'existence d'un arc entre le noeud d'id 1 et le noeud d'id 2.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Edge (1,2) n'existe pas</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La fonction n'a pas trouve l'arc et nous renvoye une reponse negative.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.3.1.2. Cas limite</h6>
+  <h7>3.2.4.3.1.2.1. L'arrete est sur le premier noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier qu'un arc sur le premier noeud du graphe peut etre trouve.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute un noeud d'id 1 auquel on ajoute un arc et un noeud d'id 2. On souhaite donc une repose positive de la fonction.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-1">[ ID-DEST = 1 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Edge (1,1) existe</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La fonction a bien trouve l'arc et nous renvoye une reponse positive.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.1.2.2. L'arrete est sur le dernier noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier qu'un arc sur le dernier noeud du graphe peut etre trouve.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute un noeud d'id 1 sans arc et un noeud d'id 2 auquel on ajoute un arc. On souhaite donc une repose positive de la fonction.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-2">[ ID-DEST = 2 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Edge (2,2) existe</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La fonction a bien trouve l'arc et nous renvoye une reponse positive.</td>
+   </tr>
+  </table>
+  <h5>3.2.4.3.2. Ajout d'arrete</h5>
+  <h6>3.2.4.3.2.1. Cas normal</h6>
+  <h7>3.2.4.3.2.1.1. Ajout d'une arrete dans un graphe oriented (comprend aussi le cas du graphe !oriented)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier l'ajout d'arc dans un graphe oriented. Ce test verifie aussi le cas du graphe non oriente.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe oriente dans lequel on a ajoute 4 noeud d'id 1, 2, 3, 4. On ajoute un arc entre les noeuds 2 et 3.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-4">ID = 4 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-3">[ ID-DEST = 3 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-4">ID = 4 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : L'arrete a ete ajoute au bon endroit.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.3.2.2. Cas limite</h6>
+  <h7>3.2.4.3.2.2.1. Ajout d'une arrete sur le premier noeud du graphe (comprend aussi le cas du graphe !oriented)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier l'ajout d'arc sur le premier noeud d'un graphe oriented. Ce test verifie aussi le cas du graphe non oriente.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe oriente dans lequel on a ajoute 4 noeud d'id 1, 2, 3, 4. On ajoute un arc sur le noeud d'id 1.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-4">ID = 4 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-2">[ ID-DEST = 2 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-4">ID = 4 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : L'arrete a ete ajoute au bon endroit.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.2.2.2. Ajout d'une arrete sur le dernier noeud du graphe (comprend aussi le cas du graphe !oriented)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier l'ajout d'arc sur le dernier noeud d'un graphe oriented. Ce test verifie aussi le cas du graphe non oriente.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe oriente dans lequel on a ajoute 4 noeud d'id 1, 2, 3, 4. On ajoute un arc sur le noeud d'id 1.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-4">ID = 4 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-4">ID = 4 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-2">[ ID-DEST = 2 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : L'arrete a ete ajoute au bon endroit.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.3.2.3. Cas d'erreur</h6>
+  <h7>3.2.4.3.2.3.1. Ajout d'une arrete entre deux noeuds (ou l'un des deux noeuds) hors du graphe (comprend aussi le cas du noeud d'id negatif)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'ajout d'un arc entre deux noeud hors d'un graphe n'est pas autorise. Ce test verifie aussi les cas où l'un des des deux est hors du graphe et celui où l'un des noeuds ou les deux ont un id negatif.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe oriente sans noeud. On ajoute un arc sur le noeud d'id 1 et d'id 2.</td>
+    <td>
+--------------------------------<br/>## Error : Can't find this column ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Matrix Exception ###<br/>Out of range exception :<br/>	Your entry : 1<br/>	Available interval : [ 1, 0 ]<br/>This column does not exist<br/>##############################################<br/>### THIS EXCEPTION ENGENDERED AN OTHER ONE ###<br/>######## ENGENDERED EXCEPTION BELOW ##########<br/>##############################################<br/>--------------------------------<br/>## Error : Can't add an edge ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Edge exception<br/>	Your entry : first-node = 1 , second-node = 2<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : L'arc n'a pas ete ajoutee au graph.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.2.3.2. Ajout d'une arrete deja existent</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'ajout d'un arc deja existant dans un graphe n'est pas autorise.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe oriente avec deux noeuds d'id 1 et 2. On ajoute un arc entre les noeuds d'id 1 et 2. Puis on ajoute de nouveau un arc entre les noeuds d'id 1 et 2.</td>
+    <td>
+--------------------------------<br/>## Error : Can't find this node ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Node exception :<br/>	Your entry : node = 3<br/>Can't find a node with this id<br/>##############################################<br/>### THIS EXCEPTION ENGENDERED AN OTHER ONE ###<br/>######## ENGENDERED EXCEPTION BELOW ##########<br/>##############################################<br/>--------------------------------<br/>## Error : Can't add an edge ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Edge exception<br/>	Your entry : first-node = 2 , second-node = 3<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : L'arc n'a pas ete ajoutee au graph.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.2.3.3. Ajout d'une arrete dans un graph non pondere</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'ajout d'un arc dans un graphe non pondere n'est pas autorise.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe oriente mais non pondere avec deux noeuds d'id 1 et 2. On ajoute un arc entre les noeuds d'id 1 et 2. On doit recevoir une erreur.</td>
+    <td>
+--------------------------------<br/>## Error : Can't add an edge ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Graph is not weighted<br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : L'arc n'a pas ete ajoutee au graph.</td>
+   </tr>
+  </table>
+  <h5>3.2.4.3.3. Changement de la valeur d'une arrete</h5>
+  <h6>3.2.4.3.3.1. Cas normal</h6>
+  <h7>3.2.4.3.3.1.1. Attribue la valeur d'une arrete dans un graphe oriented (comprend aussi le cas du graphe !oriented)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'attribuation d'une valeur a un arc dans le graphe est possible.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute trois noeuds d'id 1, 2 et 3, on ajoute l'arc (2,2) et on lui attribue la valeur 2.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-2">[ ID-DEST = 2 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-2">[ ID-DEST = 2 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur a bien ete attribuee a l'arc.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.3.3.2. Cas limite</h6>
+  <h7>3.2.4.3.3.2.1. Attribue la valeur d'une arrete sur le premier noeud du graphe (comprend aussi le cas du graphe !oriented)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'attribuation d'une valeur au premier arc dans le graphe est possible.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute trois noeuds d'id 1, 2 et 3, on ajoute l'arc (1,1) et on lui attribue la valeur 2.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-1">[ ID-DEST = 1 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-1">[ ID-DEST = 1 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur a bien ete attribuee au premier arc du graphe.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.3.2.2. Attribue la valeur d'une arrete sur le dernier noeud du graphe (comprend aussi le cas du graphe !oriented)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'attribuation d'une valeur au dernier arc dans le graphe est possible.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute trois noeuds d'id 1, 2 et 3, on ajoute l'arc (3,3) et on lui attribue la valeur 2.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-3">[ ID-DEST = 3 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-3">[ ID-DEST = 3 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur a bien ete attribuee au dernier arc du graphe.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.3.3.3. Cas d'erreur</h6>
+  <h7>3.2.4.3.3.3.1. Attribue la valeur d'une arrete entre deux noeuds (ou l'un des deux noeuds) hors du graphe (comprend aussi le cas du noeud d'id negatif)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'attribuation d'une valeur a un arc inexistant est impossible. Ce test verifie aussi les cas ou l'un des deux ou les deux noeud sont inexistant ou ont un id negatif.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute trois noeuds d'id 1, 2 et 3. On attribue la valeur 2 a l'arc inexistant (2,4).</td>
+    <td>
+--------------------------------<br/>## Error : Can't find this node ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Node exception :<br/>	Your entry : node = 4<br/>Can't find a node with this id<br/>##############################################<br/>### THIS EXCEPTION ENGENDERED AN OTHER ONE ###<br/>######## ENGENDERED EXCEPTION BELOW ##########<br/>##############################################<br/>--------------------------------<br/>## Error : Can't set an edge value ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Edge exception<br/>	Your entry : first-node = 2 , second-node = 4<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur n'a pas ete attribuee, une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.3.3.2. Attribue la valeur d'une arrete dans un graph non pondere</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'attribuation d'une valeur a un arc inexistant est impossible dans un graph non pondere</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe non pondere dans lequel on a ajoute trois noeuds d'id 1, 2 et 3. On attribue la valeur 2 a l'arc (2,3).</td>
+    <td>
+--------------------------------<br/>## Error : Can't set an edge value ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Graph is not weighted<br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur n'a pas ete attribuee, une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.3.3.3. Attribue la valeur d'une arrete inexistante entre 2 noeuds presents dans le graph</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'attribution d'une valeur a un arc inexistant entre 2 noeuds presents dans le graph</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe pondere dans lequel on a ajoute trois noeuds d'id 1, 2 et 3. On attribue la valeur 2 a l'arc inexistant (2,3).</td>
+    <td>
+--------------------------------<br/>## Error : Can't set an edge value ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Edge exception<br/>	Your entry : first-node = 1 , second-node = 3<br/>Can't find an edge between this nodes<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur n'a pas ete attribuee, une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h5>3.2.4.3.4. Obtention de la valeur d'une arrete</h5>
+  <h6>3.2.4.3.4.1. Cas normal</h6>
+  <h7>3.2.4.3.4.1.1. Cherche la valeur d'une arrete dans un graphe oriented (comprend aussi le cas du graphe !oriented)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperation de la valeur d'un arc du graphe</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on ajoute 3 noeuds d'id 1, 2 et 3, on ajoute un arc de valeur 2 entre les noeuds d'id 1 et 2. On veut recuperer la valeur de l'arc (2,1).</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-1">[ ID-DEST = 1 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Value Edge (2,1) : 1</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur de l'arc a bien ete recuperee.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.3.4.2. Cas limite</h6>
+  <h7>3.2.4.3.4.2.1. Cherche la valeur de l'arrete du premier noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperation de la valeur du premier arc du graphe</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on ajoute 3 noeuds d'id 1, 2 et 3, on ajoute un arc de valeur 2 sur le noeud d'id 1. On veut recuperer la valeur de l'arc (1,1).</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-1">[ ID-DEST = 1 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Value Edge (1,1) : 1</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur du premier arc a bien ete recuperee.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.4.2.2. Cherche la valeur de l'arrete du dernier noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperation de la valeur du dernier arc du graphe</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on ajoute 3 noeuds d'id 1, 2 et 3, on ajoute un arc de valeur 2 sur le noeud d'id 3. On veut recuperer la valeur de l'arc (3,3).</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-3">[ ID-DEST = 3 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Value Edge (3,3) : 1</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur du dernier arc a bien ete recuperee.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.3.4.3. Cas d'erreur</h6>
+  <h7>3.2.4.3.4.3.1. Cherche la valeur de l'arrete entre deux noeuds (ou l'un des deux noeuds) hors du graphe (comprend aussi le cas du noeud d'id negatif)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperation de la valeur d'un arc inexistant</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe vide. On veut recuperer la valeur de l'arc inexistant (1,1).</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+     </fieldset>
+     <span>Value Edge (1,1) : 1</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur de l'arc n'a pas ete recuperee, une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.4.3.2. Cherche la valeur d'une arrete dans un graph non pondere</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperation de la valeur d'un arc dans un graph non pondere</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe non pondere dans lequel on ajoute 3 noeuds d'id 1, 2 et 3. On veut recuperer la valeur de l'arc (3,3).</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = false</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Value Edge (3,3) : 1</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur de l'arc n'a pas ete recuperee, une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.4.3.3. Cherche la valeur d'une arrete inexistante entre 2 noeuds presents dans le graph</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'on ne peut recuperer la valeur d'un arc inexistant entre 2 noeuds presents dans le graph</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on ajoute 3 noeuds d'id 1, 2 et 3. On veut recuperer la valeur de l'arc (3,3).</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Value Edge (3,3) : 1</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : La valeur de l'arc n'a pas ete recuperee, une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h5>3.2.4.3.5. Suppression d'une arrete</h5>
+  <h6>3.2.4.3.5.1. Cas normal</h6>
+  <h7>3.2.4.3.5.1.1. Supprime une arrete du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier la suppression d'un arc dans le graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute 3 noeuds d'id 1, 2 et 3. On ajoute l'arc(2,3). On supprime l'arc(2,3).</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-3">[ ID-DEST = 3 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : L'arc a bien ete supprime.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.3.5.2. Cas limite</h6>
+  <h7>3.2.4.3.5.2.1. Supprime l'arrete du premier noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier la suppression du premier arc dans le graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute 3 noeuds d'id 1, 2 et 3. On ajoute l'arc(1,1). On supprime l'arc(1,1).</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-1">[ ID-DEST = 1 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le premier arc a bien ete supprime.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.5.2.2. Supprime l'arrete du dernier noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier la suppression du dernier arc dans le graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute 3 noeuds d'id 1, 2 et 3. On ajoute l'arc(3,3). On supprime l'arc(3,3).</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-3">[ ID-DEST = 3 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+      </table>
+     </fieldset>
+     <span>#### MODIFIED GRAPH ####</span>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le dernier arc a bien ete supprime.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.3.5.3. Cas d'erreur</h6>
+  <h7>3.2.4.3.5.3.1. Supprime une arrete hors du graphe entre deux noeuds (ou l'un des deux noeuds) hors du graphe (comprend aussi le cas du noeud d'id negatif)</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que la suppression d'un arc inexistant est impossible.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe vide. On supprime l'arc inexistant (3,3).</td>
+    <td>
+--------------------------------<br/>## Error : Can't find this column ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Matrix Exception ###<br/>Out of range exception :<br/>	Your entry : 1<br/>	Available interval : [ 1, 0 ]<br/>This column does not exist<br/>##############################################<br/>### THIS EXCEPTION ENGENDERED AN OTHER ONE ###<br/>######## ENGENDERED EXCEPTION BELOW ##########<br/>##############################################<br/>--------------------------------<br/>## Error : Can't set an edge value ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Edge exception<br/>	Your entry : first-node = 3 , second-node = 3<br/>##############################################<br/>### THIS EXCEPTION ENGENDERED AN OTHER ONE ###<br/>######## ENGENDERED EXCEPTION BELOW ##########<br/>##############################################<br/>--------------------------------<br/>## Error : Can't remove an edge ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Edge exception<br/>	Your entry : first-node = 3 , second-node = 3<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : L'arc n'a pas ete supprime, une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.5.3.2. Supprime une arrete dans un graph non pondere</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'on ne peut supprimer un arc dans un graph non pondere</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute 3 noeuds d'id 1, 2 et 3. On supprime l'arc(3,3).</td>
+    <td>
+--------------------------------<br/>## Error : Can't remove an edge ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Graph is not weighted<br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : L'arc n'a pas ete supprime, une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.3.5.3.3. Supprime une arrete inexistante entre 2 noeuds presents dans le graph</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Verifier que l'on ne peut supprimer un arc inexistant entre 2 noeuds presents dans le graph</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on a ajoute 3 noeuds d'id 1, 2 et 3. On supprime l'arc(3,3).</td>
+    <td>
+--------------------------------<br/>## Error : Can't set an edge value ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Edge exception<br/>	Your entry : first-node = 3 , second-node = 3<br/>Can't find an edge between this nodes<br/>##############################################<br/>### THIS EXCEPTION ENGENDERED AN OTHER ONE ###<br/>######## ENGENDERED EXCEPTION BELOW ##########<br/>##############################################<br/>--------------------------------<br/>## Error : Can't remove an edge ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Edge exception<br/>	Your entry : first-node = 3 , second-node = 3<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : L'arc n'a pas ete supprime, une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h4>3.2.4.4. Manipulation des voisins</h4>
+  <h5>3.2.4.4.1. Obtention du nombre de voisins d'un noeud</h5>
+  <h6>3.2.4.4.1.1. Cas normal</h6>
+  <h7>3.2.4.4.1.1.1. Nombre de voisins d'un noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperer le nombre de voisins d'un noeud du graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on ajoute 3 noeuds d'id 1, 2 et 3. On ajoute les arc (2,1) , (2,3) . On recupere le nombre de voisins du noeud 2.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-1">[ ID-DEST = 1 { EDGE-VALUE = 1 } ] </span>
+         <span class="edge" id="destination-3">[ ID-DEST = 3 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Neighborhoodsize node 2 : 2</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le nombre de voisins du noeud a bien ete recuperee.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.4.1.2. Cas d'erreur</h6>
+  <h7>3.2.4.4.1.2.1. Nombre de voisins d'un noeud hors graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperer le nombre de voisins d'un noeud inexistant. Ce test concerne aussi le node a un id negatif.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe vide. On cherche le nombre de voisins du noeud inexistant 1.</td>
+    <td>
+--------------------------------<br/>## Error : Can't find this column ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Matrix Exception ###<br/>Out of range exception :<br/>	Your entry : 1<br/>	Available interval : [ 1, 0 ]<br/>This column does not exist<br/>##############################################<br/>### THIS EXCEPTION ENGENDERED AN OTHER ONE ###<br/>######## ENGENDERED EXCEPTION BELOW ##########<br/>##############################################<br/>--------------------------------<br/>## Error : Can't get the neighborhoodsize ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Node exception :<br/>	Your entry : node = 1<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le nombre de voisins du noeud n'a pas ete recuperee, une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h5>3.2.4.4.2. Obtention du nombre de voisins d'un noeud</h5>
+  <h6>3.2.4.4.2.1. Cas normal</h6>
+  <h7>3.2.4.4.2.1.1. Retourne le k-ieme voisin d'un noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperer le k-ieme voisin d'un noeud du graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on ajoute 3 noeuds d'id 1, 2 et 3. On ajoute les arc (2,1), (2,2), (2,3) . On recupere le deuxieme voisin du noeud 2.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-1">[ ID-DEST = 1 { EDGE-VALUE = 1 } ] </span>
+         <span class="edge" id="destination-2">[ ID-DEST = 2 { EDGE-VALUE = 1 } ] </span>
+         <span class="edge" id="destination-3">[ ID-DEST = 3 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Neighbor 2 of node 2 : 2</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le 2eme voisin du noeud 2 a bien ete recuperee.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.4.2.2. Cas limite</h6>
+  <h7>3.2.4.4.2.2.1. Retourne le premier voisin d'un noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperer le premier voisin d'un noeud du graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on ajoute 3 noeuds d'id 1, 2 et 3. On ajoute les arc (2,1), (2,2), (2,3) . On recupere le premier voisin du noeud 2.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-1">[ ID-DEST = 1 { EDGE-VALUE = 1 } ] </span>
+         <span class="edge" id="destination-2">[ ID-DEST = 2 { EDGE-VALUE = 1 } ] </span>
+         <span class="edge" id="destination-3">[ ID-DEST = 3 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Neighbor 1 of node 2 : 1</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le premier voisin du noeud 2 a bien ete recuperee.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.4.2.2.2. Retourne le dernier voisin d'un noeud du graphe</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperer le dernier voisin d'un noeud du graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe dans lequel on ajoute 3 noeuds d'id 1, 2 et 3. On ajoute les arc (2,1), (2,2), (2,3) . On recupere le dernier voisin du noeud 2.</td>
+    <td>
+     <fieldset>
+      <legend>GRAPH, oriented = true, weighted = true</legend>
+      <table>
+       <tr>
+        <td>
+         <span class="node" id="node-1">ID = 1 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-2">ID = 2 { VALUE = 0 }</span>
+        </td>
+        <td>
+         <span class="edge" id="destination-1">[ ID-DEST = 1 { EDGE-VALUE = 1 } ] </span>
+         <span class="edge" id="destination-2">[ ID-DEST = 2 { EDGE-VALUE = 1 } ] </span>
+         <span class="edge" id="destination-3">[ ID-DEST = 3 { EDGE-VALUE = 1 } ] </span>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <span class="node" id="node-3">ID = 3 { VALUE = 0 }</span>
+        </td>
+        <td/>
+       </tr>
+      </table>
+     </fieldset>
+     <span>Neighbor 3 of node 2 : 3</span>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le dernier voisin du noeud 2 a bien ete recuperee.</td>
+   </tr>
+  </table>
+  <h6>3.2.4.4.2.3. Cas d'erreur</h6>
+  <h7>3.2.4.4.2.3.1. Retourne le k-ieme voisin non existent d'un noeud</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperer un voisin inexistant d'un noeud du graphe.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe avec deux noeuds d'id 1 et 2. On ajoute un arc (1,2). On recupere le deuxieme voisin du noeud 1.</td>
+    <td>
+--------------------------------<br/>## Error : Can't find a neighboor ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Node exception :<br/>	Your entry : node = 1<br/>Can't find the neighboor with idk : 2<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le voisin numero 2 du noeud 1 n'existe pas, il n'a donc pas ete recuperee, une erreur est affichee.</td>
+   </tr>
+  </table>
+  <h7>3.2.4.4.2.3.2. Retourne le k-ieme voisin d'un noeud inexistant</h7>
+  <table cellspacing="0" class="testArea">
+   <tr>
+    <td class="conslusion" colspan="2">But du test : Recuperer le deuxieme voisin d'un noeud inexistant.</td>
+   </tr>
+   <tr>
+    <td class="expResults">Resultat attendu :</td>
+    <td>Resultat obtenu :</td>
+   </tr>
+   <tr>
+    <td>On a cree un graphe vide. On recupere le deuxieme voisin du noeud 1.</td>
+    <td>
+--------------------------------<br/>## Error : Can't find this column ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Matrix Exception ###<br/>Out of range exception :<br/>	Your entry : 1<br/>	Available interval : [ 1, 0 ]<br/>This column does not exist<br/>##############################################<br/>### THIS EXCEPTION ENGENDERED AN OTHER ONE ###<br/>######## ENGENDERED EXCEPTION BELOW ##########<br/>##############################################<br/>--------------------------------<br/>## Error : Can't get a neighboor ##<br/>--------------------------------<br/>	-> TRACEBACK<br/>### Graph Exception ###<br/>Node exception :<br/>	Your entry : node = 1<br/>Can't find the neighboor with idk : 2<br/><br/>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">Conclusion : Le noeud 1 n'existe pas, son deuxieme voisin n'a donc pas ete recuperee, une erreur est affichee.</td>
+   </tr>
+  </table>
+ </body>
+</html>
+

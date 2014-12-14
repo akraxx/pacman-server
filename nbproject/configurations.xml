@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+      <itemPath>src/Dijkstra.h</itemPath>
+      <itemPath>src/DijkstraException.h</itemPath>
+      <itemPath>src/DijkstraNode.h</itemPath>
+      <itemPath>src/DijkstraParser.h</itemPath>
+      <itemPath>src/DijkstraResponder.h</itemPath>
+      <itemPath>src/DijkstraResponse.h</itemPath>
+      <itemPath>src/DijkstraSerializer.h</itemPath>
+      <itemPath>src/DijkstraSerializerJson.h</itemPath>
+      <itemPath>src/DijkstraSerializerXml.h</itemPath>
+      <itemPath>src/FibonacciHeap.h</itemPath>
+      <itemPath>src/FibonacciHeapNode.h</itemPath>
+      <itemPath>src/Graph.h</itemPath>
+      <itemPath>src/GraphException.h</itemPath>
+      <itemPath>src/GraphList.h</itemPath>
+      <itemPath>src/GraphParser.h</itemPath>
+      <itemPath>src/GraphQt.h</itemPath>
+      <itemPath>src/GraphResponder.h</itemPath>
+      <itemPath>src/GraphResponse.h</itemPath>
+      <itemPath>src/GraphSerializer.h</itemPath>
+      <itemPath>src/GraphSerializerJson.h</itemPath>
+      <itemPath>src/GraphSerializerXml.h</itemPath>
+      <itemPath>src/Matrix.h</itemPath>
+      <itemPath>src/MatrixException.h</itemPath>
+      <itemPath>src/MyException.h</itemPath>
+      <itemPath>src/Parser.h</itemPath>
+      <itemPath>src/Responder.h</itemPath>
+      <itemPath>src/Response.h</itemPath>
+      <itemPath>src/SingleTest.h</itemPath>
+      <itemPath>src/SingleTestConsole.h</itemPath>
+      <itemPath>src/SingleTestHtml.h</itemPath>
+      <itemPath>src/TestObjectif.h</itemPath>
+      <itemPath>src/TestObjectifConsole.h</itemPath>
+      <itemPath>src/TestObjectifHtml.h</itemPath>
+      <itemPath>src/TestsUnitairesObjectif2.h</itemPath>
+      <itemPath>src/TestsUnitairesObjectif2Html.h</itemPath>
+      <itemPath>src/TestsUnitairesObjectif3.h</itemPath>
+      <itemPath>src/TestsUnitairesObjectif3Html.h</itemPath>
+      <itemPath>src/utils.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+      <itemPath>src/Dijkstra.cpp</itemPath>
+      <itemPath>src/DijkstraException.cpp</itemPath>
+      <itemPath>src/DijkstraNode.cpp</itemPath>
+      <itemPath>src/DijkstraParser.cpp</itemPath>
+      <itemPath>src/DijkstraResponder.cpp</itemPath>
+      <itemPath>src/DijkstraResponse.cpp</itemPath>
+      <itemPath>src/DijkstraSerializer.cpp</itemPath>
+      <itemPath>src/DijkstraSerializerJson.cpp</itemPath>
+      <itemPath>src/DijkstraSerializerXml.cpp</itemPath>
+      <itemPath>src/FibonacciHeap.cpp</itemPath>
+      <itemPath>src/FibonacciHeapNode.cpp</itemPath>
+      <itemPath>src/GraphException.cpp</itemPath>
+      <itemPath>src/GraphList.cpp</itemPath>
+      <itemPath>src/GraphParser.cpp</itemPath>
+      <itemPath>src/GraphResponder.cpp</itemPath>
+      <itemPath>src/GraphResponse.cpp</itemPath>
+      <itemPath>src/GraphSerializer.cpp</itemPath>
+      <itemPath>src/GraphSerializerJson.cpp</itemPath>
+      <itemPath>src/GraphSerializerXml.cpp</itemPath>
+      <itemPath>src/MatrixException.cpp</itemPath>
+      <itemPath>src/MyException.cpp</itemPath>
+      <itemPath>src/Parser.cpp</itemPath>
+      <itemPath>src/Responder.cpp</itemPath>
+      <itemPath>src/Response.cpp</itemPath>
+      <itemPath>src/SingleTest.cpp</itemPath>
+      <itemPath>src/SingleTestConsole.cpp</itemPath>
+      <itemPath>src/SingleTestHtml.cpp</itemPath>
+      <itemPath>src/TestObjectif.cpp</itemPath>
+      <itemPath>src/TestObjectifConsole.cpp</itemPath>
+      <itemPath>src/TestObjectifHtml.cpp</itemPath>
+      <itemPath>src/TestsUnitairesObjectif2Html.cpp</itemPath>
+      <itemPath>src/TestsUnitairesObjectif3Html.cpp</itemPath>
+      <itemPath>src/main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="4">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <qt>
+        <modules>core xml</modules>
+        <mocDir>build</mocDir>
+      </qt>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>/usr/local/include</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerDynSerch>
+            <pElem>/usr/local/lib</pElem>
+          </linkerDynSerch>
+          <linkerLibItems>
+            <linkerLibLibItem>FastCgiQt0</linkerLibLibItem>
+            <linkerLibLibItem>qjson</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="4">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <qt>
+        <buildMode>1</buildMode>
+        <modules>core gui</modules>
+      </qt>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
